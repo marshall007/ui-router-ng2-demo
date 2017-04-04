@@ -1,10 +1,16 @@
-import { Component } from '@angular/core';
+import {Component, Optional} from '@angular/core';
+import {MdDialog, MdDialogRef, MdSnackBar} from '@angular/material';
+
 
 @Component({
-  selector: 'nx-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'nx-app',
+  templateUrl: 'app.component.html',
+  styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  title = 'nx works!';
+  foods: any[] = [
+    {name: 'Pizza', rating: 'Excellent'},
+    {name: 'Burritos', rating: 'Great'},
+    {name: 'French fries', rating: 'Pretty good'},
+  ];
 }
